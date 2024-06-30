@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Web Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./scripts.js"></script>
+    <link rel="icon" type="image/jpg" href="./imgs/Dev-icon1.JPG">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo-holder">
+            <div class="logo">DP</div>
+            <div class="logo-text"></div>
+        </a>
+        <nav>
+            <ul id="menu">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="mailto:parekhd@ufl.edu:" class="button">Contact Me</a>
+                </li>
+            </ul>
+            <a href="#" class="mobile-toggle" onClick="toggleMobileMenu();">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
+                  </svg>
+                  
+            </a>
+        </nav>
+
+    </header>
+    <main>
+        <section class="hero container">
+            <div class="hero-blue">
+                <div>
+                    <h1>
+                        Devan Parekh
+                    </h1>
+                    <p>
+                        Sophomore at the University of Florida 
+                        majoring in Computer Science, with a passion for
+                         leveraging software applications to solve real-world
+                          problems. <span>Currently, I'm pursuing a machine 
+                            learning certification and working on various projects
+                             over the summer.</span>
+                    </p>
+                    <div class="call-to-action">
+                        <a href="./DevanResume05:24.pdf" class="button black">
+                            View Resume
+                        </a>
+                        <a href="mailto:parekhd@ufl.edu:" class="button white">
+                            Contact Me
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/dev-par">
+                            <img src="./imgs/github.png" alt="GitHub" 
+                            width="48"/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/devan-parekh-36b084292/">
+                            <img src="./imgs/linkedin.png" alt="LinkedIn" 
+                            width="48"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-yellow">
+                <img src="./imgs/Dev-Headshot.png" alt="Devan Parekh" width="100%"/>
+            </div>
+
+        </section>
+        <section class="logos container">
+            <div class="marquee">
+                <div class="track">
+                    <img src="./imgs/html.png"
+                    alt="HTML" width="128"/>
+                    <img src="./imgs/css.png"
+                    alt="CSS" width="128"/>
+                    <img src="./imgs/javascript.png"
+                    alt="JS" width="128"/>
+                    <!--
+                    <img src="./imgs/sass.png"
+                    alt="Sass" width="128"/>
+                    -->
+                    <img src="./imgs/react.png"
+                    alt="React" width="128"/>
+                    <img src="./imgs/nextjs.png"
+                    alt="Next JS" width="128"/>
+                    <!--
+                    <img src="./imgs/azure.png"
+                    alt="Azure" width="128"/>
+                    -->
+                    <img src="./imgs/vscode.png"
+                    alt="VS Code" width="128"/>
+                    <img src="./imgs/python.png"
+                    alt="Python" width="128"/>
+                    <img src="./imgs/html.png"
+                    alt="HTML" width="128"/>
+                    <img src="./imgs/css.png"
+                    alt="CSS" width="128"/>
+                    <img src="./imgs/javascript.png"
+                    alt="JS" width="128"/>
+                    <!--
+                    <img src="./imgs/sass.png"
+                    alt="Sass" width="128"/>
+                    -->
+                    <img src="./imgs/react.png"
+                    alt="React" width="128"/>
+                    <img src="./imgs/nextjs.png"
+                    alt="Next JS" width="128"/>
+                    <!--
+                    <img src="./imgs/azure.png"
+                    alt="Azure" width="128"/>
+                    -->
+                    <img src="./imgs/vscode.png"
+                    alt="VS Code" width="128"/>
+                    <img src="./imgs/python.png"
+                    alt="Python" width="128"/>
+                    <img src="./imgs/css.png"
+                    alt="CSS" width="128"/>
+                    <img src="./imgs/vscode.png"
+                    alt="VS Code" width="128"/>
+                    <img src="./imgs/react.png"
+                    alt="React" width="128"/>
+                </div>
+            </div>
+
+        </section>
+        <section id="skills" class="skills container">
+            <h2>
+                <small>About Me</small>
+                Skills
+            </h2>
+            <div class="holder-blue">
+                <div class="left-column">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>Node.js</li>
+                    </ul>
+                </div>
+                <div class="right-column">
+                    <h3>A bit about me</h3>
+                    <p>I'm Devan Parekh, a student at the 
+                        University of Florida. I love 
+                        weightlifting and enjoy any watersport
+                        imaginable. I'm also a huge sneakerhead,
+                        a passion I turned into a business during
+                        high school.
+                    </p>
+                    <p>
+                        Over the summer, I'm immersing myself 
+                        in software development through various
+                        projects while working towards a machine
+                        learning certification from Deeplearning.ai
+                        and Stanford.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="work-experience container">
+            <h2>
+                <small>Recent</small>
+                Experience
+            </h2>
+            <div class="jobs">
+                <article>
+                    <figure>
+                        <div>
+                            <img src="./imgs/UF photo.jpg" alt="UF"
+                            width=100%/>
+                            <figcaption>
+                                University of Florida
+                            </figcaption>
+                        </div>
+                    </figure>
+                    <h3>University of Florida</h3>
+                    <div>2023-2027</div>
+                    <ul>
+                    <li>Currently a sophomore with completed
+                    coursework in Calculus 2, Python, C++, 
+                    and Discrete Structures.</li>
+                     <li>Involved in 
+                    organizations such as Sigma Phi Epsilon, 
+                    ACM, ISA, and SASE. 
+                    </li>
+                </ul>
+                </article>
+                <article>
+                    <figure>
+                        <div>
+                            <img src="./imgs/PR&R-logo.jpg" alt="Workplace1"
+                            width=100%/>
+                            <figcaption>
+                                Parekh Restoration and Revival
+                            </figcaption>
+                        </div>
+                    </figure>
+                    <h3>Parekh Restoration and Revival</h3>
+                    <div>2021-2023</div>
+                    <ul>
+                        <li>
+                        I started a business in high school after
+                         noticing the significant number of sneakers
+                        sold below value due to poor condition.
+                        </li>
+                        
+                        <li>
+                        I'd purchase and restore these sneakers,
+                        then resell them through various channels.
+                    </li>
+                    </ul>
+                </article>
+                <!--
+                <article>
+                    <figure>
+                        <div>
+                            <img src="./imgs/workplace-3.jpg" alt="Workplace1"
+                            width=100%/>
+                            <figcaption>
+                                Workplace - 3
+                            </figcaption>
+                        </div>
+                    </figure>
+                    <h3>Workplace - 3</h3>
+                    <div>2000-2020</div>
+                    <p>This is an example description
+                        for a workplace.
+                    </p>
+                </article>
+            -->
+            </div>
+        </section>
+        <section id="projects" class="bento">
+            <h2>
+                <small>Previous</small>
+                Projects
+            </h2>
+            <div class="bento-grid">
+                <a href="#" class="bento-item">
+                    <img src="./imgs/bento-1.jpg"
+                    alt="Bento 1" width="100%"/>
+                    <figcaption>
+                        Portfolio
+                    </figcaption>
+                </a>
+                <a href="https://github.com/dev-par/Sudoku-Prog1" class="bento-item">
+                    <img src="./imgs/Sudoku.jpg"
+                    alt="Bento 2" width="100%"/>
+                    <figcaption>
+                        Python Sudoku
+                    </figcaption>
+                </a>
+                
+                <a href="https://github.com/dev-par/MineSweeper" class="bento-item">
+                    <img src="./imgs/Minesweeper.jpg"
+                    alt="Bento 3" width="100%"/>
+                    <figcaption>
+                        C++ Minesweeper
+                    </figcaption>
+                </a>
+                <!--
+                <a href="#" class="bento-item">
+                    <img src="./imgs/bento-4.jpg"
+                    alt="Bento 4" width="100%"/>
+                </a>
+                <a href="#" class="bento-item">
+                    <img src="./imgs/bento-5.jpg"
+                    alt="Bento 5" width="100%"/>
+                </a>
+                <a href="#" class="bento-item">
+                    <img src="./imgs/bento-6.jpg"
+                    alt="Bento 6" width="100%"/>
+                </a>
+                -->
+            </div>
+        </section>
+    </main>
+</body>
+</html>
