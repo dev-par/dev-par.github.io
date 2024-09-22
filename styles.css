@@ -91,6 +91,7 @@ header {
     nav {
         display:flex;
         align-items: center;
+        padding-bottom: 10px;
         ul {
             display:flex;
             list-style-type: none;
