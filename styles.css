@@ -39,7 +39,7 @@ body {
     font-size: 20px;
     
     padding-top:90px;
-    
+    overflow-x: hidden;
 }
 
 a {
@@ -629,7 +629,8 @@ h3 {
 }
 
 .abroad-section {
-  margin-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .abroad-card {
   background: var(--base-100);
@@ -726,3 +727,70 @@ h3 {
   .abroad-acknowledgements { font-size: 1em; padding: 18px 8px; }
 }
 /* --- End Study Abroad Custom Styles (Blue/Grey Theme) --- */
+
+/* Swiper Styles for Photo Slider */
+.swiper-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 500px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+.swiper-wrapper {
+  align-items: center;
+  box-sizing: border-box;
+}
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  box-sizing: border-box;
+}
+.swiper-slide img {
+  width: 100%;
+  max-width: 360px;
+  max-height: 480px;
+  object-fit: contain;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18), 0 1.5px 8px rgba(0,0,0,0.10);
+  background: #fff;
+}
+.swiper-button-next, .swiper-button-prev {
+  color: var(--blu, #082557);
+  background: rgba(255,255,255,0.7);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: 0 !important;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 2em;
+}
+@media (max-width: 1200px) {
+  .swiper-container {
+    max-width: 98vw;
+    min-height: 320px;
+  }
+  .swiper-slide img {
+    max-width: 30vw;
+    max-height: 220px;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 700px) {
+  .swiper-container {
+    min-height: 180px;
+    padding-bottom: 24px;
+  }
+  .swiper-slide img {
+    max-width: 90vw;
+    max-height: 120px;
+  }
+}
