@@ -2,10 +2,156 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Study Abroad Description</title>
+    <title>Study Abroad Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./scripts.js"></script>
+    <link rel="icon" type="image/jpg" href="./imgs/Dev-icon1.JPG">
 </head>
 <body>
-    <h1>Hello!</h1>
+    <header>
+        <a href="index.html" class="logo-holder">
+            <div class="logo">DP</div>
+            <div class="logo-text"></div>
+        </a>
+        <nav>
+            <ul id="menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="index.html#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="index.html#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="mailto:devan.m.parekh@gmail.com" class="button">Contact Me</a>
+                </li>
+            </ul>
+            <a href="#" class="mobile-toggle" onClick="toggleMobileMenu();">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
+                </svg>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-abroad container">
+            <div class="hero-content">
+                <h1 style="font-size:2.8em; font-weight:800; letter-spacing:-2px;">
+                    Study Abroad: Cape Town, South Africa
+                </h1>
+                <div class="abroad-quote" style="animation-delay:0.2s;">
+                    <span style="font-size:1.3em;">"Travel is the only thing you buy that makes you richer."</span>
+                </div>
+                <div class="abroad-card" style="background:rgba(255,255,255,0.92); color:var(--blu); margin-top:18px;">
+                    <strong style="font-size:1.1em;">Project Description:</strong><br/>
+                    During my study abroad in Cape Town, I collaborated with local organizations to develop a project management platform for a nonprofit. The experience combined software development, teamwork, and cultural immersion. (Replace with your real description)
+                </div>
+            </div>
+            <div class="hero-img">
+                <img src="./imgs/UF photo.jpeg" alt="Cape Town"/>
+            </div>
+        </section>
+
+        <section class="abroad-section container">
+            <div style="display:flex; flex-wrap:wrap; gap:32px; justify-content:center;">
+                <div class="abroad-card fadeIn" style="flex:1; min-width:260px;">
+                    <h3>🌍 Global Learning & Skills</h3>
+                    <ul>
+                        <li>Cross-cultural communication</li>
+                        <li>Project management in a global context</li>
+                        <li>Technical skills: Next.js, TypeScript, Tailwind CSS</li>
+                        <li>Teamwork and leadership</li>
+                        <li>Problem-solving in real-world settings</li>
+                    </ul>
+                </div>
+                <div class="abroad-card fadeIn" style="flex:1; min-width:260px;">
+                    <h3>🏆 Achievements</h3>
+                    <ul>
+                        <li>Launched a working MVP for the nonprofit</li>
+                        <li>Presented project to local stakeholders</li>
+                        <li>Received positive feedback from EDU Africa</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="abroad-section container">
+            <h2 style="margin-bottom:10px; color:var(--blu);">Highlights & Reflections</h2>
+            <div style="display:flex; flex-wrap:wrap; gap:32px;">
+                <div style="flex:2; min-width:320px;">
+                    <div class="abroad-card fadeIn">
+                        <h3>🌄 Most Memorable Experience</h3>
+                        <p>Hiking Table Mountain with my team and seeing Cape Town from above. The sense of accomplishment and camaraderie was unforgettable. (Replace with your real story)</p>
+                    </div>
+                    <div class="abroad-card fadeIn">
+                        <h3>✨ Highlights</h3>
+                        <ul>
+                            <li>Working with local students and professionals</li>
+                            <li>Exploring Cape Town's vibrant culture and history</li>
+                            <li>Weekend trips to Robben Island and the Cape of Good Hope</li>
+                        </ul>
+                    </div>
+                    <div class="abroad-card fadeIn">
+                        <h3>💡 Reflections</h3>
+                        <p>This experience taught me the value of adaptability, open-mindedness, and the importance of community in global projects. (Replace with your real reflection)</p>
+                    </div>
+                </div>
+                <div style="flex:1; min-width:220px;">
+                    <div class="abroad-gallery">
+                        <div class="abroad-polaroid fadeIn">
+                            <img src="./imgs/Portfolio-website.jpg" alt="Cape Town Project"/>
+                            <div class="caption">Project Launch Day</div>
+                        </div>
+                        <div class="abroad-polaroid fadeIn">
+                            <img src="./imgs/HousePredictor.png" alt="Teamwork"/>
+                            <div class="caption">Team Collaboration</div>
+                        </div>
+                        <div class="abroad-polaroid fadeIn">
+                            <img src="./imgs/Dev-Headshot.png" alt="Reflection"/>
+                            <div class="caption">Personal Growth</div>
+                        </div>
+                        <div class="abroad-polaroid fadeIn">
+                            <img src="./imgs/StartingPointBlog.png" alt="Adventure"/>
+                            <div class="caption">Adventure Time</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="abroad-section container">
+            <div style="display:flex; flex-wrap:wrap; gap:32px; justify-content:center;">
+                <div class="abroad-card fadeIn" style="flex:2; min-width:320px;">
+                    <h3>📝 Lessons Learned, Advice & Tips</h3>
+                    <ul>
+                        <li>Embrace every opportunity to learn from others</li>
+                        <li>Be proactive in communication—ask questions!</li>
+                        <li>Document your journey with photos and notes</li>
+                        <li>Try local foods and participate in cultural events</li>
+                        <li>Stay open-minded and flexible</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="abroad-section container">
+            <div class="abroad-acknowledgements fadeIn">
+                <ul style="list-style:none; padding:0; margin:0;">
+                    <li>Dr. Sanethia Thomas</li>
+                    <li>Ping Neo</li>
+                    <li>Naomi Harrell</li>
+                    <li>EDU Africa</li>
+                    <li>Serving Organization</li>
+                </ul>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
