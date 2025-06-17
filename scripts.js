@@ -41,17 +41,17 @@ function changeSlide(direction) {
     showSlide(currentSlide + direction);
 }
 
-// Initialize slider on DOMContentLoaded
+// Swiper initialization for photo slider
 window.addEventListener('DOMContentLoaded', function() {
     new Swiper('.swiper-container', {
         slidesPerView: 3,
         spaceBetween: 24,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
         loop: true,
         centeredSlides: false,
+        autoplay: {
+            delay: 1500,
+            disableOnInteraction: false,
+        },
         breakpoints: {
             0: {
                 slidesPerView: 1,

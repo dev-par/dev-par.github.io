@@ -731,7 +731,7 @@ h3 {
 /* Swiper Styles for Photo Slider */
 .swiper-container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   min-height: 500px;
   padding-bottom: 40px;
@@ -752,10 +752,9 @@ h3 {
 }
 .swiper-slide img {
   width: 100%;
-  max-width: 360px;
-  max-height: 480px;
+  max-width: 500px;
+  max-height: 600px;
   object-fit: contain;
-  border-radius: 16px;
   box-shadow: 0 8px 32px rgba(0,0,0,0.18), 0 1.5px 8px rgba(0,0,0,0.10);
   background: #fff;
 }
@@ -773,18 +772,18 @@ h3 {
 .swiper-button-next:after, .swiper-button-prev:after {
   font-size: 2em;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
   .swiper-container {
     max-width: 98vw;
     min-height: 320px;
   }
   .swiper-slide img {
-    max-width: 30vw;
-    max-height: 220px;
+    max-width: 32vw;
+    max-height: 320px;
     border-radius: 10px;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .swiper-container {
     min-height: 180px;
     padding-bottom: 24px;
