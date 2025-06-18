@@ -733,11 +733,11 @@ h3 {
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;
-  min-height: 500px;
-  padding-bottom: 40px;
+  padding: 20px 0 40px 0;
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
+  background-color: #fff;
 }
 .swiper-wrapper {
   align-items: center;
@@ -749,12 +749,12 @@ h3 {
   justify-content: center;
   background: none;
   box-sizing: border-box;
+  padding: 10px;
 }
 .swiper-slide img {
   width: 100%;
-  max-width: 500px;
-  max-height: 600px;
-  object-fit: contain;
+  height: 400px;
+  object-fit: cover;
   box-shadow: 0 8px 32px rgba(0,0,0,0.18), 0 1.5px 8px rgba(0,0,0,0.10);
   background: #fff;
 }
@@ -775,21 +775,27 @@ h3 {
 @media (max-width: 1600px) {
   .swiper-container {
     max-width: 98vw;
-    min-height: 320px;
   }
   .swiper-slide img {
-    max-width: 32vw;
-    max-height: 320px;
-    border-radius: 10px;
+    height: 350px;
   }
 }
 @media (max-width: 900px) {
   .swiper-container {
-    min-height: 180px;
     padding-bottom: 24px;
   }
   .swiper-slide img {
-    max-width: 90vw;
-    max-height: 120px;
+    height: 250px;
   }
+}
+
+.lessons-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.lessons-container .abroad-card {
+    width: 100%;
+    margin: 0 auto;
 }

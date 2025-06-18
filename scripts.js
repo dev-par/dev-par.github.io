@@ -3,51 +3,14 @@ function toggleMobileMenu(){
     ("active");
 }
 
-// Photo Slider Logic
-const sliderImages = [
-    {
-        src: './imgs/UF photo.jpeg',
-        caption: 'Cape Town View'
-    },
-    {
-        src: './imgs/Portfolio-website.jpg',
-        caption: 'Project Work'
-    },
-    {
-        src: './imgs/HousePredictor.png',
-        caption: 'Team Collaboration'
-    },
-    {
-        src: './imgs/StartingPointBlog.png',
-        caption: 'Adventure Time'
-    }
-];
-let currentSlide = 0;
-
-function showSlide(index) {
-    const total = sliderImages.length;
-    currentSlide = (index + total) % total;
-    for (let i = 0; i < 3; i++) {
-        const img = document.getElementById(`slider-image-${i}`);
-        const imgIndex = (currentSlide + i) % total;
-        if (img) {
-            img.src = sliderImages[imgIndex].src;
-            img.alt = sliderImages[imgIndex].caption;
-        }
-    }
-}
-
-function changeSlide(direction) {
-    showSlide(currentSlide + direction);
-}
-
 // Swiper initialization for photo slider
 window.addEventListener('DOMContentLoaded', function() {
     new Swiper('.swiper-container', {
         slidesPerView: 3,
         spaceBetween: 24,
         loop: true,
-        centeredSlides: false,
+        centeredSlides: true,
+        grabCursor: true,
         autoplay: {
             delay: 1500,
             disableOnInteraction: false,
